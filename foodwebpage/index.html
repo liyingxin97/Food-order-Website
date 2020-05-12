@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--Drawing with JS
+By, Tina Li
+Date: 11/28/2018
+-->
+<html>
+	<head>
+	<title>Enjoy Delicious Chinese Food!</title>
+	<meta charset = "utf-9">
+	<link href="styles\normal.css" rel="stylesheet">
+	</head>
+	<style>
+			body		{
+						 background-image: url(images/back.jpg);
+						 background-size: 50%;
+						 background-repeat: repeat;}
+	</style>
+	
+	
+	<body>
+	<div id="wrapper">
+		<header><center><h2>Welcome to Dragon Chinese house</center></h2></header>
+		<h1 align=center>Enjoy Delicious Chinese Food!</h1>
+		<br>
+		<nav>
+				<li><b><center><font size="+2"> Order online </font></center></b></li>
+				
+				<li><h2><center><a href = "Page2.html">Main Menu</a></h2></center></li>
+					
+			</nav>
+		<p align=center><img src="images/restaurant.jpg" alt="Picture" height="350" width="500"id="mainpic" /></p>
+	<br>
+	<form id=order name=order>
+	<p align=center>
+	<strong>Please fill out the form accordingly. Put the number of
+	items you want in the box next to each.</strong>
+	<br>
+	<br>
+	Sweet and sour pork $5.00 <input type="text" name="porkQty" size="2" value="0" onmouseover= "porkImage()" onmouseout= "document.getElementById('mainpic').src='images/restaurant.jpg'">
+	<br>
+	Kung Pao chicken  $5.25 <input type="text" name="chickenQty" size="2" value="0" onmouseover= "chickenImage()" onmouseout= "document.getElementById('mainpic').src= 'images/restaurant.jpg'">
+	<br>
+	Szechuan Fish $5.00 <input type="text" name="fishQty" size="2" value="0" onmouseover= "fishImage()" onmouseout= "document.getElementById('mainpic').src='images/restaurant.jpg'">
+	<br>
+	Beef with Broccoli $5.10 <input type="text" name="beefQty" size="2" value="0" onmouseover= "beefImage()" onmouseout= "document.getElementById('mainpic').src='images/restaurant.jpg'">
+	<br>
+	Imperial shrimp $5.95 <input type="text" name="shrimpQty" size="2" value="0" onmouseover= "shrimpImage()" onmouseout= "document.getElementById('mainpic').src='images/restaurant.jpg'">
+	<br>
+	Mixed Vegetable $4.50 <input type="text" name="vegetableQty" size="2" value="0" onmouseover= "vegetableImage()" onmouseout= "document.getElementById('mainpic').src='images/restaurant.jpg'">
+	<br>
+	Soup $3.50 <input type="text" name="soupQty" size="2" value="0" onmouseover= "soupImage()" onmouseout= "document.getElementById('mainpic').src='images/restaurant.jpg'">
+
+	<br>
+	<strong>Please select one of the following options:</strong><br>
+	<input type="radio" name="discountRB" />Uhart Student (10% off) <br>
+	<input type="radio" name="discountRB" /> Uhart Professor (5% off) <br>
+	<input type="radio" name="discountRB" /> Neither Student or Professor (no discount) <br>
+	<br>
+	
+	<br>
+	<input type="button" name="calcBtn" value="Check out!" onclick="billme(document.order)" />
+	<input type="reset" name="resetBtn" value="Clear Form" />
+	<br>
+	<br>
+	SubTotal: $<input type="text" name="subtotalBox" size="6" value="0" /><br>
+
+	Money saved with discounts: $<input type="text" name="savingsBox" size="6" value="0" /><br>
+
+	</p>
+	<br>
+	<script> 		window.alert('Have Fun!');
+
+	</script>
+	
+
+	<script src="scripts\base.js"></script>
+	
+	</body>
+	</html>
